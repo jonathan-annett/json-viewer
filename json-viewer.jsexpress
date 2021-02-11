@@ -20,6 +20,6 @@ usage:
 */ 
 
 
-   module.exports = function(app){
-      app.use(require('express').static(__dirname));
+   module.exports = function(app,root){
+      app.use(root||('/'+(__dirname.split('/').pop())),require('express').static(__dirname));
   };
