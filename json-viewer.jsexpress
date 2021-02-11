@@ -1,0 +1,14 @@
+/*
+
+usage:
+const express = require('express');  
+const app = express();  
+require(require.resolve('json-viewer')+'express')(app);
+...
+
+*/ 
+
+
+   module.exports = function(app){
+      app.use(require('express').static(__dirname);
+  };
