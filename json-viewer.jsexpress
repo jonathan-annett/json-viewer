@@ -1,10 +1,21 @@
 /*
 
+installing:
+
+add to your package.json dependancies:
+
+     "dependencies": {
+         "json-viewer": "github:jonathan-annett/json-viewer"
+      } 
+
+
+
 usage:
-const express = require('express');  
-const app = express();  
-require(require.resolve('json-viewer')+'express')(app);
-...
+
+    const express = require('express');  
+    const app = express();  
+    require(require.resolve('json-viewer')+'express')(app);
+    ...
 
 */ 
 
